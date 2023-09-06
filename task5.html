@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+        }
+        table{
+            border:1px solid black
+        }
+        th,td{
+            border:1px solid black
+        }
+        th{
+            width: 150px;
+        }
+        td{
+            width:200px;
+        }
+        input{
+            width:600px;
+        }
+        #lable{
+            display:flex;
+            justify-content: center;
+            align-content:center
+
+        }
+        .radio{
+            width:50px;
+        }
+        #radio2{
+            width:40px
+            
+        }
+        #lable2{
+            display:flex;
+            margin-left: 264px;
+
+
+        }
+        .lang{
+          margin: 0px;
+          width: 20px;
+        }
+
+        button{
+          position: absolute;
+          left: 300px;
+          top:500px;
+          width: 100px;
+        }
+
+        #first{
+            border:0.25px solid black;
+            height:20px;
+            width:770px;
+            border-top: 0px;
+
+        }
+        .log{
+          position: absolute;
+          left:580px;
+        }
+        .add{
+          width: 600px;
+        }
+       
+       
+        
+    </style>
+</head>
+<body>
+
+    <h1>Registration form</h1>
+    <table>
+        <tr>
+            <th >First Name</th>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <th>Last Name</th>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <th>Email</th>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <th>Password</th>
+            <td><input type="Password"></td>
+        </tr>
+
+        <tr>
+            <th>Re-enter Password</th>
+            <td><input type="password"></td>
+        </tr>
+
+        <tr>
+            <th>Gender</th>
+            <td>
+                <lable id="lable"><input type="radio" value="Male" name="gender" class="radio">Male </lable>
+                <hr id="hr">
+                <lable id="lable2"><input type="radio" value="Male" name="gender" id="radio2">Female </lable>
+
+            </td>
+        </tr>
+
+        <tr>
+          <th>Age</th>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <th>Phone number</th>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <th>Address</th>
+            <td>
+              <textarea class="add" name="feedback" placeholder="enter your address " rows="5" ></textarea>
+            </td>
+
+      </tr>
+
+        <tr>
+          <th>State</th>
+          <td><input type="text"></td>
+        </tr>
+
+        <tr>
+          <th>Country</th>
+          <td><select name ="Country" id="lang">
+            <option value="Select Language">Choose your country</option>
+            <option value="India">India</option>
+            <option value="Srilanka">Srilanka</option>
+  
+  
+            
+                
+  
+            </select></td>
+
+
+        </tr>
+
+        <tr>
+          <th>Language Known</th>
+          
+          <td>
+            <input type="checkbox" class="lang" name="English" value="Language Known"><label for="English"> English</label>
+
+            <input type="checkbox" class="lang" name="EnglishKnada" value="Language Known"><label for="Kanada"> Kanada</label>
+
+
+            <input type="checkbox" class="lang" name="Hindi" value="Language Known"><label for="Hindi"> Hindi</label>
+
+            <input type="checkbox" class="lang" name="Telegu" value="Language Known"><label for="Telegu"> Telegu</label>
+
+
+          
+          </td>
+          
+        </tr>
+
+        <tr>
+          <!-- <td >
+            <input type="checkbox" class="lang" name="Telegu" value="Language Known"><label for="Telegu"> Telegu</label>
+
+            <p class="here">hello</p>
+
+          </td> -->
+          
+          
+        </tr>
+
+        
+
+
+
+
+
+    </table>
+    <div id="first">
+      <input type="checkbox" class="lang" id="input2"> 
+      <label>Hereby I declare all the given details are true</label>
+  </div>
+  <div id="first">
+    <p class="log">Log in to <a href="Ethnus">Ethnus</a> website
+    </div></p>
+</div>
+
+    <button>Register</button>
+    
+</body>
+</html>
